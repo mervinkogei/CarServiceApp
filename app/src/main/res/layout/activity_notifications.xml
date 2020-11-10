@@ -9,6 +9,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
         android:text="Garage appointment title"
         android:textSize="20dp" />
 
@@ -28,7 +30,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:gravity="left"
-            android:text="service type"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="Major Services"
             android:textSize="20dp" />
 
         <LinearLayout
@@ -43,19 +47,19 @@
                 android:id="@+id/required_service_small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="required service small" />
+                android:text="Brake fluid change" />
 
             <CheckBox
                 android:id="@+id/required_service_big"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="required service big" />
+                android:text="Cabin filter change" />
 
             <CheckBox
                 android:id="@+id/required_service_tyres"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="required service tyres" />
+                android:text="Engine oil change" />
 
         </LinearLayout>
 
@@ -73,35 +77,106 @@
                 android:id="@+id/required_service_brakes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="required service brakes" />
+                android:text="Car paint and Car Alignment" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/required_service_group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/required_service_group"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/checkbox_group_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="left"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="Minor Services"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/checkbox_group_left1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_group_title1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <CheckBox
+                android:id="@+id/required_service_small1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Air filter change" />
+
+            <CheckBox
+                android:id="@+id/required_service_big1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brake Inspection" />
+
+            <CheckBox
+                android:id="@+id/required_service_tyres1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wheel bearing and shock" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_group_right1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_group_title1"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/checkbox_group_left1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <CheckBox
+                android:id="@+id/required_service_brakes1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absorber Inspection" />
 
 
             <CheckBox
-                android:id="@+id/required_service_diagnostics"
+                android:id="@+id/required_service_diagnostics1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="required service diagnostics" />
+                android:text="Air Conditioning" />
 
             <CheckBox
-                android:id="@+id/required_service_other"
+                android:id="@+id/required_service_other1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="required service other" />
+                android:text="Electrical component" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
 
+
     <EditText
         android:id="@+id/extra_note_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/required_service_group"
+        android:layout_below="@id/required_service_group1"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:hint="extra note input"
+        android:hint="Kindly enter your additional comment here"
         android:lines="4" />
 
     <Spinner
@@ -119,6 +194,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
+        android:contextClickable="true"
         android:text="submit service request" />
 
 </RelativeLayout>
