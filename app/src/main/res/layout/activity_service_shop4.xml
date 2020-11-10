@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imgUser"
             android:layout_centerHorizontal="true"
-            android:text="AUtoExpress Service"
+            android:text="AutoExpress Service"
             android:textSize="32sp"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-light"
@@ -94,7 +94,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Westlands Kangemi, Nairobi CBD"
+                    android:text="GPO, Nairobi CBD"
                     android:fontFamily="sans-serif-light"
                     android:textSize="18dp"
                     android:textColor="#000000"

@@ -53,14 +53,14 @@ public class ProfileActivity extends Fragment {
             }
         });
 
-        openWebpage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW);
-//                browserIntent.setData(Uri.parse("https://www.drivespark.com/four-wheelers/2017/common-car-problems-and-solutions-simplified/articlecontent-pf79135-024390.html"));
-                startActivity(browserIntent);
-            }
-        });
+//        openWebpage.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent browserIntent = new Intent(Intent.ACTION_VIEW);
+////                browserIntent.setData(Uri.parse("https://www.drivespark.com/four-wheelers/2017/common-car-problems-and-solutions-simplified/articlecontent-pf79135-024390.html"));
+//                startActivity(browserIntent);
+//            }
+//        });
 
 
 

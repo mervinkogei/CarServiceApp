@@ -39,7 +39,7 @@
             android:layout_below="@id/textViewTitle"
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/imageView"
-            android:text="Jalandhar, Punjab"
+            android:text="Ngara AutoExpress"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
         <TextView

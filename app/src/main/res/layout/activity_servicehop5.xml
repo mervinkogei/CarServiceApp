@@ -93,7 +93,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Meru Maua Rd, Meru Town"
+                    android:text="Ruaraka, Nairobi"
                     android:fontFamily="sans-serif-light"
                     android:textSize="18dp"
                     android:textColor="#000000"
@@ -144,8 +144,7 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                >
+                android:layout_marginTop="5dp">
 
                 <TextView
                     android:layout_width="wrap_content"

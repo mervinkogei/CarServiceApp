@@ -41,43 +41,43 @@ public class Home extends Fragment {
         serviceCenteresList = new ArrayList<>();
 
         serviceCenteresList.add( new serviceCenteres(1,
-                "Bhogal Motor Garage",
-                "Phagwara, Punjab",
+                "Shell Motor Garage",
+                "Muthaiga Road, Nairobi",
                 4.4,
                 "2.6 km",
                 R.drawable.service1));
 
         serviceCenteresList.add( new serviceCenteres(2,
-                "Raj Auto Service",
-                "Jalandhar, Punjab",
+                "Gulf Auto Service",
+                "Thika Road, Nairobi",
                 4.0,
                 "3.9 km",
                 R.drawable.service2));
 
         serviceCenteresList.add( new serviceCenteres(3,
-                "Honda Service Station",
-                "Jalandhar, Punjab",
+                "Total Service Station",
+                "Westlands, Nairobi",
                 5.0,
                 "6.3 km",
                 R.drawable.service4));
 
         serviceCenteresList.add( new serviceCenteres(4,
-                "Ravindra Auto Service",
-                "Phagwara, Punjab",
+                "AutoExpress Service",
+                "GPO, Nairobi CBD",
                 4.0,
                 "6.6 km",
                 R.drawable.service6));
 
         serviceCenteresList.add( new serviceCenteres(5,
                 "Tata Motor Servive Center",
-                "Jalandhar, Punjab",
+                "Ruaraka, Nairobi",
                 4.7,
                 "6.8 km",
                 R.drawable.service5));
 
         serviceCenteresList.add( new serviceCenteres(6,
-                "Balwinder Motor Garage",
-                "Phagwara, Punjab",
+                "Rubis Motor Garage",
+                "Mlolongo, Nairobi",
                 4.3,
                 "9.2 km",
                 R.drawable.service3));
