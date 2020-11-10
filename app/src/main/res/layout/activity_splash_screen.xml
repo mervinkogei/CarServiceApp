@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#23a7db"
+    tools:context=".SplashScreen">
+
+
+    <ImageView
+        android:id="@+id/img_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:text="Welcome to Kobil Garage"
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/img_splash"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_slogan"
+        android:text="Service beyond your expectation"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_welcome"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

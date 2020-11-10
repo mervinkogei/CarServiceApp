@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imgUser"
             android:layout_centerHorizontal="true"
-            android:text="Welcome To PAB "
+            android:text="Welcome To Kobil Garage "
             android:textSize="32sp"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-light"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_name"
             android:layout_centerHorizontal="true"
-            android:text="Punjab, India"
+            android:text="Ngara, Nairobi"
             android:textAllCaps="true"
             android:textSize="15sp"
             android:fontFamily="sans-serif"
@@ -269,18 +269,18 @@
                 android:layout_marginTop="2dp"
                 >
 
-                <TextView
-                    android:id="@+id/tvCommonProblems"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:gravity="center"
-                    android:textSize="15dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/red_bg"
-                    android:autoLink="web"
-                    android:text="Click here to check out more common problems"
-                    />
+<!--                <TextView-->
+<!--                    android:id="@+id/tvCommonProblems"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textSize="15dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:background="@drawable/red_bg"-->
+<!--                    android:autoLink="web"-->
+<!--                    android:text="Click here to check out more common problems"-->
+<!--                    />-->
 
             </LinearLayout>
 

@@ -1,129 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/red_bg"
-    tools:context=".Notifications">
-
-
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvRPS"
+        android:id="@+id/appointment_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rock Paper Scisssor"
-        android:textSize="35dp"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/white"
-        android:background="@drawable/circle_grad"
-        />
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="Garage appointment title"
+        android:textSize="20dp" />
 
-
-
-    <ImageView
-        android:layout_marginTop="10dp"
-        android:id="@+id/ivCurrent"
-        android:layout_width="wrap_content"
-        android:layout_height="170dp"
-        android:layout_below="@+id/tvRPS"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/scissor" />
-
-    <TextView
-        android:id="@+id/tvHuman"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Human Choice"
-        android:gravity="center"
-        android:layout_below="@+id/ivCurrent"
-        android:background="@drawable/et_bg"
-        android:textColor="#ffffff"
-        android:textSize="20dp"
-        />
-
-    <ImageView
-        android:id="@+id/ivComputer"
-        android:layout_width="wrap_content"
-        android:layout_height="170dp"
-        android:layout_below="@+id/tvHuman"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/stone" />
-
-    <TextView
-        android:id="@+id/tvComputer"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:layout_below="@+id/ivComputer"
-        android:text="Computer Choice"
-        android:textColor="#ffffff"
-        android:background="@drawable/et_bg"
-        android:textSize="20dp"
-        />
-
-
-
-    <TextView
-        android:id="@+id/tvScore"
+    <RelativeLayout
+        android:id="@+id/required_service_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="Score: Human-> 0  Computer-> 0"
-        android:layout_below="@+id/tvComputer"
+        android:layout_below="@id/appointment_title"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:textColor="#ffffff"
-        />
-
-    <LinearLayout
-        android:layout_marginTop="520dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        >
-        <Button
-            android:id="@+id/bRock"
-            android:layout_width="110dp"
-            android:layout_marginLeft="10dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/checkbox_group_title"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ROCK"
-            android:textColor="#ffffff"
-            android:layout_marginTop="5dp"
-            android:fontFamily="sans-serif-medium"
-            android:background="@drawable/btn_bg"
-            />
+            android:layout_alignParentStart="true"
+            android:gravity="left"
+            android:text="service type"
+            android:textSize="20dp" />
 
-        <Button
-            android:id="@+id/bPaper"
-            android:layout_width="110dp"
+        <LinearLayout
+            android:id="@+id/checkbox_group_left"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Paper"
-            android:layout_marginLeft="5dp"
-            android:textColor="#ffffff"
-            android:layout_marginTop="5dp"
-            android:fontFamily="sans-serif-medium"
-            android:background="@drawable/btn_bg"
-            />
+            android:layout_below="@id/checkbox_group_title"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <Button
-            android:id="@+id/bScissor"
-            android:layout_width="110dp"
+            <CheckBox
+                android:id="@+id/required_service_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="required service small" />
+
+            <CheckBox
+                android:id="@+id/required_service_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="required service big" />
+
+            <CheckBox
+                android:id="@+id/required_service_tyres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="required service tyres" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_group_right"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Scissor"
-            android:layout_marginLeft="5dp"
-            android:textColor="#ffffff"
-            android:layout_marginTop="5dp"
-            android:fontFamily="sans-serif-medium"
-            android:background="@drawable/btn_bg"
-            />
+            android:layout_below="@id/checkbox_group_title"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/checkbox_group_left"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-    </LinearLayout>
+            <CheckBox
+                android:id="@+id/required_service_brakes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="required service brakes" />
 
 
+            <CheckBox
+                android:id="@+id/required_service_diagnostics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="required service diagnostics" />
+
+            <CheckBox
+                android:id="@+id/required_service_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="required service other" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/extra_note_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/required_service_group"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="extra note input"
+        android:lines="4" />
+
+    <Spinner
+        android:id="@+id/appointment_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/extra_note_input"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/submit_service_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="submit service request" />
 
 </RelativeLayout>

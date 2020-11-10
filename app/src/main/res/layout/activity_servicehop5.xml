@@ -93,7 +93,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Grand Trunk Rd, Pragpur Village, Jalandhar Cantt, Jalandhar, Punjab"
+                    android:text="Meru Maua Rd, Meru Town"
                     android:fontFamily="sans-serif-light"
                     android:textSize="18dp"
                     android:textColor="#000000"
@@ -158,7 +158,7 @@
                     android:id="@+id/tvService5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0181-2243004"
+                    android:text="0718243004"
                     android:fontFamily="sans-serif-light"
                     android:textSize="18dp"
                     android:textColor="#0c22ef"

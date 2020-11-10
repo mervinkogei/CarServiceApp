@@ -38,8 +38,8 @@ public class ProfileActivity extends Fragment {
 
         // initialization of views
         iv = view.findViewById(R.id.ivProfile);
-        openWebpage = view.findViewById(R.id.tvCommonProblems);
-        openWebpage.setMovementMethod(LinkMovementMethod.getInstance());
+//        openWebpage = view.findViewById(R.id.tvCommonProblems);
+//        openWebpage.setMovementMethod(LinkMovementMethod.getInstance());
 
         // getting information of a specific user
         user = FirebaseAuth.getInstance().getCurrentUser();
@@ -57,7 +57,7 @@ public class ProfileActivity extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW);
-                browserIntent.setData(Uri.parse("https://www.drivespark.com/four-wheelers/2017/common-car-problems-and-solutions-simplified/articlecontent-pf79135-024390.html"));
+//                browserIntent.setData(Uri.parse("https://www.drivespark.com/four-wheelers/2017/common-car-problems-and-solutions-simplified/articlecontent-pf79135-024390.html"));
                 startActivity(browserIntent);
             }
         });

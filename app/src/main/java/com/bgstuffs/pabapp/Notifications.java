@@ -29,23 +29,23 @@ public class Notifications extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.activity_notifications,container,false);
+//
+//        b_rock = view.findViewById(R.id.bRock);
+//        b_paper = view.findViewById(R.id.bPaper);
+//        b_scissor = view.findViewById(R.id.bScissor);
+//
+//        tv_Score = view.findViewById(R.id.tvScore);
 
-        b_rock = view.findViewById(R.id.bRock);
-        b_paper = view.findViewById(R.id.bPaper);
-        b_scissor = view.findViewById(R.id.bScissor);
-
-        tv_Score = view.findViewById(R.id.tvScore);
-
-        iv_ComputerChoice = view.findViewById(R.id.ivComputer);
-        iv_HumanChoice = view.findViewById(R.id.ivCurrent);
+//        iv_ComputerChoice = view.findViewById(R.id.ivComputer);
+//        iv_HumanChoice = view.findViewById(R.id.ivCurrent);
 
         b_rock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 iv_HumanChoice.setImageResource(R.drawable.stone);
-                String message = play_turn("Rock");
+                String message = play_turn("Major Service");
                 Toast.makeText(getActivity(),message,Toast.LENGTH_SHORT).show();
-                tv_Score.setText("Score: Human-> "+ Integer.toString(HumanScore)+" Computer-> "+Integer.toString(ComputerScore));
+                tv_Score.setText("Performance: Engine-> "+ Integer.toString(HumanScore)+" Brake-> "+Integer.toString(ComputerScore));
             }
         });
 
@@ -53,9 +53,9 @@ public class Notifications extends Fragment {
             @Override
             public void onClick(View v) {
                 iv_HumanChoice.setImageResource(R.drawable.paper);
-                String message = play_turn("Paper");
+                String message = play_turn("Minor Service");
                 Toast.makeText(getActivity(),message,Toast.LENGTH_SHORT).show();
-                tv_Score.setText("Score: Human-> "+ Integer.toString(HumanScore)+" Computer-> "+Integer.toString(ComputerScore));
+                tv_Score.setText("Perfomance: Alignment-> "+ Integer.toString(HumanScore)+" Painting-> "+Integer.toString(ComputerScore));
             }
         });
 
@@ -63,9 +63,9 @@ public class Notifications extends Fragment {
             @Override
             public void onClick(View v) {
                 iv_HumanChoice.setImageResource(R.drawable.scissor);
-                String message = play_turn("Scissor");
+                String message = play_turn("Other Services");
                 Toast.makeText(getActivity(),message,Toast.LENGTH_SHORT).show();
-                tv_Score.setText("Score: Human-> "+ Integer.toString(HumanScore)+" Computer-> "+Integer.toString(ComputerScore));
+                tv_Score.setText("Perfomance: Wheeling-> "+ Integer.toString(HumanScore)+" Wiring-> "+Integer.toString(ComputerScore));
             }
         });
 
@@ -80,55 +80,55 @@ public class Notifications extends Fragment {
         int comp_number = r.nextInt(3)+1;
 
         if (comp_number == 1){
-            comp_choice = "Rock";
+            comp_choice = "Major Service";
         }
         else if (comp_number == 2){
-            comp_choice = "Paper";
+            comp_choice = "Minor Service";
         }
         else if (comp_number == 3){
-            comp_choice = "Scissor";
+            comp_choice = "Other Service";
         }
         // set the computer image based on the choice
-        if (comp_choice == "Rock"){
+        if (comp_choice == "Major Service"){
             iv_ComputerChoice.setImageResource(R.drawable.stone);
         }
-        else if (comp_choice == "Paper"){
+        else if (comp_choice == "Minor Service"){
             iv_ComputerChoice.setImageResource(R.drawable.paper);
         }
-        else if (comp_choice == "Scissor"){
+        else if (comp_choice == "Other Service"){
             iv_ComputerChoice.setImageResource(R.drawable.scissor);
         }
 
         // to determine who will win
         if (comp_choice == player_choice){
-            return "Draw: Nobody Won.";
+            return "Attendance: Nobody attended to your car.";
         }
-        else if (player_choice == "Rock" && comp_choice == "Scissor"){
+        else if (player_choice == "Major Service" && comp_choice == "Minor Service"){
             HumanScore++;
-            return "Rock crushes Scissor. You Win!";
+            return "Major Service is Done. You can go for Road Test!";
         }
-        else if (player_choice == "Rock" && comp_choice == "Paper"){
+        else if (player_choice == "Major Service" && comp_choice == "Other Service"){
             ComputerScore++;
-            return "Paper Cover Rock. Computer Win!";
+            return "Other Service Service is Done. You can go for Road Test!";
         }
-        else if (player_choice == "Scissor" && comp_choice == "Rock"){
+        else if (player_choice == "Other Service" && comp_choice == "Major Service"){
             ComputerScore++;
-            return "Rock crushes Scissor. Computer Win!";
+            return "Major Service is Done. You can go for Road Test!";
         }
-        else if (player_choice == "Scissor" && comp_choice == "Paper"){
+        else if (player_choice == "Minor Service" && comp_choice == "Other Service"){
             HumanScore++;
-            return "Scissor cuts Paper. You Win!";
+            return "Major Service is Done. You can go for Road Test!";
         }
-        else if (player_choice == "Paper" && comp_choice == "Rock"){
+        else if (player_choice == "Minor Service" && comp_choice == "Major Service"){
             HumanScore++;
-            return "Paper Cover Rock. You Win!";
+            return "Major Service is Done. You can go for Road Test!";
         }
-        else if (player_choice == "Paper" && comp_choice == "Scissor"){
+        else if (player_choice == "Minor Service" && comp_choice == "Other Service"){
             ComputerScore++;
-            return "Scissor cuts Paper. Computer Win!";
+            return "Major Service is Done. You can go for Road Test!";
         }
         else
-            return "Not Sure";
+            return "Not Sure, Please Wait";
 
     }
 
